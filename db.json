@@ -1,0 +1,52 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "React Basics",
+      "description": "Learn the basics of React.",
+      "difficulty": "Beginner",
+      "rating": "4.7/5",
+      "enrolled": 200
+    },
+    {
+      "id": 2,
+      "title": "Advanced React",
+      "description": "Deep dive into advanced React topics.",
+      "difficulty": "Advanced",
+      "rating": "4.8/5",
+      "enrolled": 150
+    },
+    {
+      "id": 3,
+      "title": "React with Redux",
+      "description": "State management with Redux in React.",
+      "difficulty": "Intermediate",
+      "rating": "4.6/5",
+      "enrolled": 180
+    },
+    {
+      "id": 4,
+      "title": "React Router",
+      "description": "Learn routing in React.",
+      "difficulty": "Intermediate",
+      "rating": "4.5/5",
+      "enrolled": 170
+    },
+    {
+      "id": 5,
+      "title": "Material-UI in React",
+      "description": "Styling React apps with Material-UI.",
+      "difficulty": "Intermediate",
+      "rating": "4.9/5",
+      "enrolled": 220
+    },
+    {
+      "id": 6,
+      "title": "Testing React Apps",
+      "description": "Learn how to test your React applications.",
+      "difficulty": "Advanced",
+      "rating": "4.6/5",
+      "enrolled": 130
+    }
+  ]
+}
