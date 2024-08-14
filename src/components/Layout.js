@@ -1,13 +1,12 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, Container } from "@mui/material";
+import Header from "./Header";
 
 const Layout = ({ children }) => {
   return (
     <div>
       <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6">E-Learning Platform</Typography>
-        </Toolbar>
+        <Header />
       </AppBar>
       <Container>
         {children}

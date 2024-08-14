@@ -6,7 +6,7 @@ export const courseListState = atom({
     {
       id: "1",
       title: "React Basics",
-      description: "Learn the basics of React"
+      description: "earn the basics of React"
     },
     { id: "2", title: "Advanced React", description: "Dive deeper into React" },
     {
