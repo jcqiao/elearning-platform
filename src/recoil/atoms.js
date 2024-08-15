@@ -6,7 +6,62 @@ export const courseListState = atom({
     {
       id: "1",
       title: "React Basics",
-      description: "earn the basics of React"
+      description: "Learn the basics of React"
+    },
+    { id: "2", title: "Advanced React", description: "Dive deeper into React" },
+    {
+      id: "3",
+      title: "Recoil for State Management",
+      description: "Manage state with Recoil"
+    }
+  ]
+});
+export const exploreCourseListState = atom({
+  key: "exploreCourseListState",
+  default: [
+    {
+      id: "1",
+      title: "React Basics",
+      description: "Learn the basics of React"
+    },
+    { id: "2", title: "Advanced React", description: "Dive deeper into React" },
+    {
+      id: "3",
+      title: "Recoil for State Management",
+      description: "Manage state with Recoil"
+    }
+  ]
+});
+
+export const slideCourseListState = atom({
+  key: "slideCourseListState",
+  default: [
+    {
+      id: "1",
+      title: "React Basics",
+      description: "Learn the basics of React"
+    },
+    { id: "2", title: "Advanced React", description: "Dive deeper into React" },
+    {
+      id: "3",
+      title: "Recoil for State Management",
+      description: "Manage state with Recoil"
+    },
+    {
+      id: "1",
+      title: "React Basics",
+      description: "Learn the basics of React"
+    },
+    { id: "2", title: "Advanced React", description: "Dive deeper into React" },
+    {
+      id: "3",
+      title: "Recoil for State Management",
+      description: "Manage state with Recoil"
+    },
+    {
+      id: "1",
+      title: "React Basics",
+      description: "Learn the basics of React"
     },
     { id: "2", title: "Advanced React", description: "Dive deeper into React" },
     {

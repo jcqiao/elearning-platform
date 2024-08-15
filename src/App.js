@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import Dashboard from "./components/Dashboard";
 import CourseList from "./components/CourseList";
 import CourseDetail from "./components/CourseDetail";
+import LearningProgress from "./components/LearningProgress";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/courses" element={<CourseList />} />
         <Route path="/courses/:courseId" element={<CourseDetail />} />
+        <Route path="/progress" element={<LearningProgress />} />
       </Routes>
     </Layout>
   );
