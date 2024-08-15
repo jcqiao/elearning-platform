@@ -7,9 +7,6 @@ import {
   Typography,
   Button,
   Box,
-  List,
-  ListItem,
-  ListItemText,
   Avatar,
   IconButton,
   CircularProgress
@@ -19,7 +16,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import axios from "axios";
-import { courseListState, userProgressState } from "../recoil/atoms";
+import { courseListState } from "../recoil/atoms";
 import Slider from "react-slick";
 
 const sliderSettings = {
@@ -34,7 +31,6 @@ const sliderSettings = {
 
 const Dashboard = () => {
   const courses = useRecoilValue(courseListState);
-  const progress = useRecoilValue(userProgressState);
   const [recommendedCourses, setRecommendedCourses] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
@@ -88,48 +84,6 @@ const Dashboard = () => {
       </Typography>
 
       <Grid container spacing={3}>
-        {/* 用户学习进度概览 */}
-        <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 2 }}>
-            <Typography variant="h6" gutterBottom>
-              Learning Progress
-            </Typography>
-            <List>
-              {courses.map(course =>
-                <ListItem key={course.id}>
-                  <ListItemText
-                    primary={course.title}
-                    secondary={`Progress: ${progress[course.id] || 0}%`}
-                  />
-                </ListItem>
-              )}
-            </List>
-          </Paper>
-        </Grid>
-
-        {/* 最近学习的课程 */}
-        <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 2 }}>
-            <Typography variant="h6" gutterBottom>
-              Recently Accessed Courses
-            </Typography>
-            <List>
-              {courses.slice(0, 3).map(course =>
-                <ListItem
-                  button
-                  component={Link}
-                  to={`/courses/${course.id}`}
-                  key={course.id}
-                >
-                  <ListItemText
-                    primary={course.title}
-                    secondary={course.description}
-                  />
-                </ListItem>
-              )}
-            </List>
-          </Paper>
-        </Grid>
         <Grid item xs={12} md={12}>
           <Box sx={{ width: "100%", marginBottom: 2 }}>
             <Typography variant="h4" component="div" gutterBottom>

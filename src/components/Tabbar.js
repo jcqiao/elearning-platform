@@ -10,10 +10,10 @@ const TabBar = () => {
       <Tabs value={location.pathname} variant="scrollable" scrollButtons="auto">
         <Tab label="Home" component={Link} to="/" value="/" />
         <Tab
-          label="Dashboard"
+          label="Progress"
           component={Link}
-          to="/dashboard"
-          value="/dashboard"
+          to="/progress"
+          value="/progress"
         />
         <Tab
           label="Browse All Courses"
