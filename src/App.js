@@ -6,6 +6,7 @@ import CourseList from "./components/CourseList";
 import CourseDetail from "./components/CourseDetail";
 import LearningProgress from "./components/LearningProgress";
 import CourseLearn from "./components/CourseLearn";
+import Complete from "./components/Complete";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/courses/:courseId" element={<CourseDetail />} />
         <Route path="/progress" element={<LearningProgress />} />
         <Route path="/learn" element={<CourseLearn />} />
+        <Route path="/completion" element={<Complete />} />
       </Routes>
     </Layout>
   );
