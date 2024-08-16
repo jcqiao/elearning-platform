@@ -8,6 +8,7 @@ import LearningProgress from "./components/LearningProgress";
 import CourseLearn from "./components/CourseLearn";
 import Complete from "./components/Complete";
 import CourseLearnVideo from "./components/CourseLearnVideo";
+import CourseLearnInteractive from "./components/CourseLearnInteractive";
 
 function App() {
   return (
@@ -19,7 +20,11 @@ function App() {
         <Route path="/progress" element={<LearningProgress />} />
         <Route path="/learn" element={<CourseLearn />} />
         <Route path="/completion" element={<Complete />} />
-        <Route path="/learn/:courseId" element={<CourseLearnVideo />} />
+        <Route path="/learn/video/:courseId" element={<CourseLearnVideo />} />
+        <Route
+          path="/learn/ppt/interactive/:courseId"
+          element={<CourseLearnInteractive />}
+        />
       </Routes>
     </Layout>
   );

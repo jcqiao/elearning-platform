@@ -17,7 +17,8 @@ export const courseListState = atom({
     {
       id: "3",
       title: "Recoil for State Management",
-      description: "Manage state with Recoil"
+      description: "Manage state with Recoil",
+      interactive: true
     }
   ]
 });
