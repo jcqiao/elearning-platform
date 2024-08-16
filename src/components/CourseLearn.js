@@ -26,6 +26,7 @@ const CourseLearn = () => {
   const [answeredCorrectly, setAnsweredCorrectly] = useState(false);
   const maxSteps = slides.length;
   const navigate = useNavigate();
+
   useEffect(() => {
     if (!id) {
       setCourseId(localStorage.getItem(courseId));

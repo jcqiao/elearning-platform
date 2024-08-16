@@ -7,6 +7,7 @@ import CourseDetail from "./components/CourseDetail";
 import LearningProgress from "./components/LearningProgress";
 import CourseLearn from "./components/CourseLearn";
 import Complete from "./components/Complete";
+import CourseLearnVideo from "./components/CourseLearnVideo";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/progress" element={<LearningProgress />} />
         <Route path="/learn" element={<CourseLearn />} />
         <Route path="/completion" element={<Complete />} />
+        <Route path="/learn/:courseId" element={<CourseLearnVideo />} />
       </Routes>
     </Layout>
   );

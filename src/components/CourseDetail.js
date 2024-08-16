@@ -13,7 +13,11 @@ const CourseDetail = () => {
   const navigate = useNavigate();
   const handleClick = () => {
     localStorage.setItem("courseId", courseId);
-    navigate(`/learn?courseId=${courseId}`, { state: { courseId } });
+    if (course.video) {
+      navigate(`/learn/${courseId}`);
+    } else {
+      navigate(`/learn?courseId=${courseId}`, { state: { courseId } });
+    }
   };
 
   if (!course) {
