@@ -9,6 +9,8 @@ import CourseLearn from "./components/CourseLearn";
 import Complete from "./components/Complete";
 import CourseLearnVideo from "./components/CourseLearnVideo";
 import CourseLearnInteractive from "./components/CourseLearnInteractive";
+import Profile from "./components/Profile/Profile";
+import EditProfile from "./components/Profile/EditProfile";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           path="/learn/ppt/interactive/:courseId"
           element={<CourseLearnInteractive />}
         />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile/edit" element={<EditProfile />} />
       </Routes>
     </Layout>
   );

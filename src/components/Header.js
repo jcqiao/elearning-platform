@@ -6,17 +6,21 @@ import {
   TextField,
   IconButton,
   InputAdornment,
-  Box
+  Box,
+  Avatar
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import axios from "axios";
-import { useSetRecoilState } from "recoil";
+import { useRecoilState, useSetRecoilState } from "recoil";
 import { courseListState } from "../recoil/atoms";
 import { debounce } from "../utils/common";
+import { userState } from "./Profile/atom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const setCourseList = useSetRecoilState(courseListState);
   const [allCourses, setAllCourses] = useState([]);
+  const user = useRecoilState(userState);
   useEffect(() => {
     const getAllCourses = async () => {
       try {
@@ -86,6 +90,9 @@ const Header = () => {
             }}
           />
         </Box>
+        <IconButton component={Link} to="/profile">
+          <Avatar alt={user.name} src={user.avatarUrl || user.name} />
+        </IconButton>
       </Toolbar>
     </AppBar>
   );
