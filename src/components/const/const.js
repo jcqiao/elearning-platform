@@ -1,4 +1,4 @@
-import img from "../../video/1.png";
+import img from "../../assets/1.png";
 export const coursePPTs = {
   1: [
     {

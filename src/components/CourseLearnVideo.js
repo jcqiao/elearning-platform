@@ -10,7 +10,7 @@ import {
   FormControlLabel,
   Radio
 } from "@mui/material";
-import donuts from "../video/donuts.mp4";
+import donuts from "../assets/donuts.mp4";
 
 const CourseLearnVideoWithQuestion = () => {
   const [playing, setPlaying] = useState(true); // 控制视频播放
