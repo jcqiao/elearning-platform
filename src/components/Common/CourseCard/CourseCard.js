@@ -12,8 +12,6 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { styled } from "@mui/system";
 
 const ZoomCard = styled(Card)({
-  minWidth: 240,
-  marginRight: 2,
   transition: "transform 0.3s ease-in-out",
   "&:hover": {
     transform: "scale(1.05)" // Adjust the scale value to your liking
@@ -40,7 +38,13 @@ const CourseCard = ({
   isFavorite = course.isFavorate
 }) => {
   return (
-    <ZoomCard>
+    <ZoomCard
+      sx={{
+        minWidth: 240,
+        marginRight: 2,
+        minHeight: 280
+      }}
+    >
       <Box sx={{ position: "relative" }}>
         <CardMedia
           component="img"

@@ -6,19 +6,42 @@ export const courseListState = atom({
     {
       id: "1",
       title: "React Basics",
-      description: "Learn the basics of React"
+      description: "Learn the basics of React",
+      isFavorate: false
     },
     {
       id: "2",
-      title: "Advanced React",
-      description: "Dive deeper into React",
-      video: true
+      title: "Advanced Blender",
+      description: "Dive deeper into Blender",
+      video: true,
+      isFavorate: false
     },
     {
       id: "3",
       title: "Recoil for State Management",
       description: "Manage state with Recoil",
-      interactive: true
+      interactive: true,
+      isFavorate: false
+    },
+    {
+      id: "4",
+      title: "Blender",
+      description: "Learn the basics of Blender",
+      isFavorate: false
+    },
+    {
+      id: "5",
+      title: "Advanced React",
+      description: "Dive deeper into React",
+      video: true,
+      isFavorate: false
+    },
+    {
+      id: "6",
+      title: "Material",
+      description: "Manage material with Recoil",
+      interactive: true,
+      isFavorate: false
     }
   ]
 });
