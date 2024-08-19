@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Box, TextField, Button, Avatar, Typography } from "@mui/material";
 import { useRecoilState } from "recoil";
-import { userState } from "./atom";
+import { userState } from "../../recoil/atoms";
 
 const EditProfile = ({ setIsEditing }) => {
   const [user, setUser] = useRecoilState(userState);

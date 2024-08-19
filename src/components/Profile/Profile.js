@@ -1,29 +1,30 @@
 import React, { useState } from "react";
 import { Box, Avatar, Typography, Grid, Paper, Button } from "@mui/material";
 import { useRecoilState, useRecoilValue } from "recoil";
-import { userState } from "./atom";
 import EditProfile from "./EditProfile";
 import CourseCard from "../Common/CourseCard/CourseCard";
+import { slideCourseListState, userState } from "../../recoil/atoms";
 
 const Profile = () => {
-  const [user, setUser] = useRecoilState(userState);
+  const user = useRecoilValue(userState);
   const [isEditing, setIsEditing] = useState(false);
+  const [courses, setCourses] = useRecoilState(slideCourseListState);
+
+  console.log();
+
   if (isEditing) {
     return <EditProfile setIsEditing={setIsEditing} />;
   }
-  console.log("user", user);
 
   const onToggleFavorite = id => {
-    setUser(pre => {
-      const favoriteCourses = JSON.parse(JSON.stringify(pre.favoriteCourses));
-      const updateFavorite = favoriteCourses.map(item => {
-        if (item.id === id) {
-          item.isFavorate = !item.isFavorate;
-        }
-        return item;
-      });
-      return { ...pre, favoriteCourses: updateFavorite };
+    const tmpCourses = JSON.parse(JSON.stringify(courses));
+    const updateFavoriteCourse = tmpCourses.map(course => {
+      if (course.id === id) {
+        course.isFavorate = !course.isFavorate;
+      }
+      return course;
     });
+    setCourses([...updateFavoriteCourse]);
   };
   return (
     <Box sx={{ padding: 3 }}>
@@ -79,7 +80,7 @@ const Profile = () => {
           Favorite Courses
         </Typography>
         <Grid container spacing={2}>
-          {user.favoriteCourses.map((course, index) =>
+          {courses.filter(course => course.isFavorate).map((course, index) =>
             <Grid item xs={12} md={6} lg={4} key={index}>
               {course.isFavorate &&
                 <CourseCard

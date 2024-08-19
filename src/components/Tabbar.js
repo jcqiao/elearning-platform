@@ -8,7 +8,12 @@ const TabBar = () => {
   return (
     <AppBar position="static" sx={{ backgroundColor: "white" }}>
       <Tabs value={location.pathname} variant="scrollable" scrollButtons="auto">
-        <Tab label="Home" component={Link} to="/" value="/" />
+        <Tab
+          label="Home"
+          component={Link}
+          to="/elearning-platform"
+          value="/elearning-platform"
+        />
         <Tab
           label="Progress"
           component={Link}

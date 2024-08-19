@@ -12,9 +12,8 @@ import {
 import SearchIcon from "@mui/icons-material/Search";
 import axios from "axios";
 import { useRecoilState, useSetRecoilState } from "recoil";
-import { courseListState } from "../recoil/atoms";
+import { courseListState, userState } from "../recoil/atoms";
 import { debounce } from "../utils/common";
-import { userState } from "./Profile/atom";
 import { Link } from "react-router-dom";
 
 const Header = () => {
