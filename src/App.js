@@ -11,6 +11,7 @@ import CourseLearnVideo from "./components/CourseLearnVideo";
 import CourseLearnInteractive from "./components/CourseLearnInteractive";
 import Profile from "./components/Profile/Profile";
 import EditProfile from "./components/Profile/EditProfile";
+import BrowseAllCourses from "./components/BrowseAllCourses";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/elearning-platform" element={<Dashboard />} />
         <Route path="/courses" element={<CourseList />} />
         <Route path="/courses/:courseId" element={<CourseDetail />} />
+        <Route path="/courses/all" element={<BrowseAllCourses />} />
         <Route path="/progress" element={<LearningProgress />} />
         <Route path="/learn" element={<CourseLearn />} />
         <Route path="/completion" element={<Complete />} />

@@ -9,6 +9,30 @@ import {
 } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import { styled } from "@mui/system";
+
+const ZoomCard = styled(Card)({
+  minWidth: 240,
+  marginRight: 2,
+  transition: "transform 0.3s ease-in-out",
+  "&:hover": {
+    transform: "scale(1.05)" // Adjust the scale value to your liking
+  }
+});
+
+const AnimatedIconButton = styled(IconButton)({
+  "&:active": {
+    animation: "heart-beat 0.3s ease-in-out"
+  },
+  "@keyframes heart-beat": {
+    "0%, 100%": {
+      transform: "scale(1)"
+    },
+    "50%": {
+      transform: "scale(1.3)"
+    }
+  }
+});
 
 const CourseCard = ({
   course,
@@ -16,7 +40,7 @@ const CourseCard = ({
   isFavorite = course.isFavorate
 }) => {
   return (
-    <Card sx={{ minWidth: 240, marginRight: 2 }}>
+    <ZoomCard>
       <Box sx={{ position: "relative" }}>
         <CardMedia
           component="img"
@@ -32,14 +56,14 @@ const CourseCard = ({
             {course.description}
           </Typography>
         </CardContent>
-        <IconButton
+        <AnimatedIconButton
           sx={{ position: "absolute", top: 10, right: 10 }}
           onClick={() => onToggleFavorite(course.id)}
         >
           {isFavorite ? <FavoriteIcon color="error" /> : <FavoriteBorderIcon />}
-        </IconButton>
+        </AnimatedIconButton>
       </Box>
-    </Card>
+    </ZoomCard>
   );
 };
 

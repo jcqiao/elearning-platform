@@ -11,8 +11,8 @@ const TabBar = () => {
         <Tab
           label="Home"
           component={Link}
-          to="/elearning-platform"
-          value="/elearning-platform"
+          to="/elearning-platform/"
+          value="/elearning-platform/"
         />
         <Tab
           label="Progress"
@@ -23,8 +23,8 @@ const TabBar = () => {
         <Tab
           label="Browse All Courses"
           component={Link}
-          to="/browse"
-          value="/browse"
+          to="/courses/all"
+          value="/courses/all"
         />
       </Tabs>
     </AppBar>
