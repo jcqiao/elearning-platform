@@ -10,7 +10,11 @@ import {
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
-const CourseCard = ({ course, onToggleFavorite, isFavorite }) => {
+const CourseCard = ({
+  course,
+  onToggleFavorite,
+  isFavorite = course.isFavorate
+}) => {
   return (
     <Card sx={{ minWidth: 240, marginRight: 2 }}>
       <Box sx={{ position: "relative" }}>
