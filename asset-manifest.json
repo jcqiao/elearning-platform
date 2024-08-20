@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/elearning-platform/static/css/main.5be25c38.css",
-    "main.js": "/elearning-platform/static/js/main.c25cf842.js",
+    "main.js": "/elearning-platform/static/js/main.94713439.js",
     "reactPlayerYouTube.js": "/elearning-platform/static/js/reactPlayerYouTube.f4d49d62.chunk.js",
     "reactPlayerSoundCloud.js": "/elearning-platform/static/js/reactPlayerSoundCloud.bcf7e2ad.chunk.js",
     "reactPlayerVimeo.js": "/elearning-platform/static/js/reactPlayerVimeo.ce6260d2.chunk.js",
@@ -16,6 +16,7 @@
     "reactPlayerKaltura.js": "/elearning-platform/static/js/reactPlayerKaltura.e9a0b0a6.chunk.js",
     "reactPlayerFilePlayer.js": "/elearning-platform/static/js/reactPlayerFilePlayer.9f343965.chunk.js",
     "reactPlayerPreview.js": "/elearning-platform/static/js/reactPlayerPreview.a049fc2b.chunk.js",
+    "static/media/avatar.png": "/elearning-platform/static/media/avatar.503f4e7ce77a3fb02728.png",
     "static/media/donuts.mp4": "/elearning-platform/static/media/donuts.725c733bfa5c880c1dba.mp4",
     "static/media/slick.svg": "/elearning-platform/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/elearning-platform/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -23,7 +24,7 @@
     "static/media/slick.woff": "/elearning-platform/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/elearning-platform/index.html",
     "main.5be25c38.css.map": "/elearning-platform/static/css/main.5be25c38.css.map",
-    "main.c25cf842.js.map": "/elearning-platform/static/js/main.c25cf842.js.map",
+    "main.94713439.js.map": "/elearning-platform/static/js/main.94713439.js.map",
     "reactPlayerYouTube.f4d49d62.chunk.js.map": "/elearning-platform/static/js/reactPlayerYouTube.f4d49d62.chunk.js.map",
     "reactPlayerSoundCloud.bcf7e2ad.chunk.js.map": "/elearning-platform/static/js/reactPlayerSoundCloud.bcf7e2ad.chunk.js.map",
     "reactPlayerVimeo.ce6260d2.chunk.js.map": "/elearning-platform/static/js/reactPlayerVimeo.ce6260d2.chunk.js.map",
@@ -41,6 +42,6 @@
   },
   "entrypoints": [
     "static/css/main.5be25c38.css",
-    "static/js/main.c25cf842.js"
+    "static/js/main.94713439.js"
   ]
 }
