@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/elearning-platform/static/css/main.5be25c38.css",
-    "main.js": "/elearning-platform/static/js/main.4e6c415c.js",
+    "main.js": "/elearning-platform/static/js/main.c25cf842.js",
     "reactPlayerYouTube.js": "/elearning-platform/static/js/reactPlayerYouTube.f4d49d62.chunk.js",
     "reactPlayerSoundCloud.js": "/elearning-platform/static/js/reactPlayerSoundCloud.bcf7e2ad.chunk.js",
     "reactPlayerVimeo.js": "/elearning-platform/static/js/reactPlayerVimeo.ce6260d2.chunk.js",
@@ -23,7 +23,7 @@
     "static/media/slick.woff": "/elearning-platform/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/elearning-platform/index.html",
     "main.5be25c38.css.map": "/elearning-platform/static/css/main.5be25c38.css.map",
-    "main.4e6c415c.js.map": "/elearning-platform/static/js/main.4e6c415c.js.map",
+    "main.c25cf842.js.map": "/elearning-platform/static/js/main.c25cf842.js.map",
     "reactPlayerYouTube.f4d49d62.chunk.js.map": "/elearning-platform/static/js/reactPlayerYouTube.f4d49d62.chunk.js.map",
     "reactPlayerSoundCloud.bcf7e2ad.chunk.js.map": "/elearning-platform/static/js/reactPlayerSoundCloud.bcf7e2ad.chunk.js.map",
     "reactPlayerVimeo.ce6260d2.chunk.js.map": "/elearning-platform/static/js/reactPlayerVimeo.ce6260d2.chunk.js.map",
@@ -41,6 +41,6 @@
   },
   "entrypoints": [
     "static/css/main.5be25c38.css",
-    "static/js/main.4e6c415c.js"
+    "static/js/main.c25cf842.js"
   ]
 }
